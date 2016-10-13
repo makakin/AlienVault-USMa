@@ -1,0 +1,16 @@
+<Sysmon schemaversion="3.10">
+    <HashAlgorithms>md5</HashAlgorithms>
+    <EventFiltering>
+        <!-- Do not log process termination -->
+        <ProcessTerminate onmatch="include"/>
+        <!-- Exclude connection to Amazon metadata -->
+        <NetworkConnect onmatch="exclude">
+            <DestinationIp>169.254.169.254</DestinationIp>
+        </NetworkConnect>
+        <!-- Exclude ImageLoad with signed files -->
+        <ImageLoad onmatch="exclude">
+            <Signed>true</Signed>
+        </ImageLoad>
+        <RawAccessRead onmatch="include"/>
+    </EventFiltering>
+</Sysmon>
