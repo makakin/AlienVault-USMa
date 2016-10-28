@@ -41,7 +41,7 @@ Start-Service -InputObject nxlog
 Enable-PSRemoting –force
 #Let's make sure we save the current TrustedHosts and add the USM to the list
 $curValue = (get-item wsman:\localhost\Client\TrustedHosts).value 
-IF([string]::IsNullOrWhiteSpace($curValue)) {            
+IF([string]::IsNullOrWhiteSpace($curValue) -or $curValue -contains "*") {          
     Set-Item wsman:\localhost\Client\TrustedHosts -value "$SensorIP"            
 } else {            
     Set-Item wsman:\localhost\Client\TrustedHosts -value "$curValue, $SensorIP"            
