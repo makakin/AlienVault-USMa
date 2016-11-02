@@ -9,7 +9,7 @@ Run powershell as admin. (right-click powershell icon, and select run as Adminis
 
 Enable scripts in powershell by issuing the command "Set-ExecutionPolicy Unrestricted"
 
-Type cd <location of extracted folder>
+Type cd \<location of extracted folder>\
 
 Run the script: ".\inst-nxlog.ps1"
 
