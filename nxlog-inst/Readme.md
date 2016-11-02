@@ -1,5 +1,5 @@
 Steps to use:
-Download included zip file to system , and extract it.  
+Download all files to system.  
 
 Make sure Sysmon.exe, nxlog.conf, and inst-nxlog.ps1 exist in the extracted folder. It is important to use the included nxlog.conf file, the script relies on the text [USMIPADDRESS] to be in the file.
 
