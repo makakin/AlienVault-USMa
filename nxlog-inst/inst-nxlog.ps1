@@ -1,5 +1,7 @@
 ﻿#Installer script for Alienvault USM Anywhere NXLog integration
-#Tested with Powershell v2 - v5. 
+#Tested with Powershell v2 - v5.
+#Author: Scott Mace Nov.2016
+#Version 3 
 #Must allow script execution in powershell, and must be run as administrator
 #Note that webclient commented out stuff is testing potential autodownloading of configs.
 # Set Some variables
