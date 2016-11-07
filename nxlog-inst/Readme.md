@@ -1,4 +1,5 @@
 Steps to use:
+
 Download all files to system.  
 
 Make sure Sysmon.exe, nxlog.conf, and inst-nxlog.ps1 exist in the extracted folder. It is important to use the included nxlog.conf file, the script relies on the text [USMIPADDRESS] to be in the file.
@@ -9,7 +10,7 @@ Run powershell as admin. (right-click powershell icon, and select run as Adminis
 
 Enable scripts in powershell by issuing the command "Set-ExecutionPolicy Unrestricted"
 
-Type cd <location of extracted folder>
+Type cd \<location of extracted folder\>
 
 Run the script: ".\inst-nxlog.ps1"
 

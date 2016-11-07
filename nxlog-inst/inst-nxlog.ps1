@@ -67,3 +67,4 @@ IF([string]::IsNullOrEmpty($curValue) -or $curValue -contains "*") {
     Set-Item wsman:\localhost\Client\TrustedHosts -value "$curValue, $SensorIP"            
 } 
 }    
+}    
